@@ -1,0 +1,103 @@
+/*
+Theme Name: DIY Home Improvement
+Description: A minimalist WordPress theme designed for DIY and home improvement content, optimized for the Smart Page Builder plugin and WP Engine hosting.
+Version: 1.0.0
+Author: DIY Theme Developer
+Text Domain: diy-home-improvement
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 8.0
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+This theme is designed to showcase DIY and home improvement content with:
+- Clean, modern design using Tailwind CSS
+- Smart Page Builder plugin integration
+- WP Engine optimization
+- Mobile-first responsive design
+- Accessibility compliance (WCAG 2.1 AA)
+*/
+
+/* Import Tailwind CSS - will be replaced with compiled CSS */
+@import url('https://cdn.tailwindcss.com');
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Custom CSS for gradient text */
+.text-gradient {
+  background: linear-gradient(to right, #3b82f6, #1d4ed8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Fallback for browsers that don't support background-clip */
+}
+
+/* Ensure proper font loading */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Custom styles for WordPress blocks */
+.wp-block-group {
+  margin-bottom: 2rem;
+}
+
+.wp-block-heading {
+  margin-bottom: 1rem;
+}
+
+/* Smart Page Builder placeholder styling */
+.smart-page-builder-placeholder {
+  background-color: #f1f5f9;
+  border: 2px dashed #cbd5e1;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+  color: #64748b;
+  font-style: italic;
+}
+
+.smart-page-builder-placeholder::before {
+  content: "🔧 Smart Page Builder Content Area";
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Accessibility improvements */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

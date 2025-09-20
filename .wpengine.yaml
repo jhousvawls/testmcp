@@ -1,0 +1,65 @@
+# WP Engine Deployment Configuration
+# This file configures deployment settings for WP Engine
+
+# Build settings
+build:
+  # No build process needed for this WordPress theme
+  skip: true
+
+# Deployment settings
+deploy:
+  # This is a WordPress theme
+  type: wordpress-theme
+  
+  # Theme should be deployed to wp-content/themes/
+  destination: wp-content/themes/diy-home-improvement-theme
+  
+  # Files to include in deployment
+  include:
+    - "*.php"
+    - "*.css"
+    - "*.js"
+    - "*.md"
+    - "assets/**"
+    - "inc/**"
+    - "template-parts/**"
+    - "sample-content/**"
+  
+  # Files to exclude from deployment
+  exclude:
+    - ".git/**"
+    - ".gitignore"
+    - "node_modules/**"
+    - "*.log"
+    - ".DS_Store"
+    - "Thumbs.db"
+
+# Environment settings
+environment:
+  # WordPress version compatibility
+  wordpress: ">=6.0"
+  
+  # PHP version requirement
+  php: ">=8.0"
+  
+  # Theme activation
+  activate: true
+
+# Performance settings
+performance:
+  # Enable caching
+  cache: true
+  
+  # Enable compression
+  compression: true
+  
+  # Enable CDN
+  cdn: true
+
+# Security settings
+security:
+  # Enable security headers
+  headers: true
+  
+  # Enable SSL
+  ssl: true

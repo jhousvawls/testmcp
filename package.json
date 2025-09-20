@@ -1,0 +1,51 @@
+{
+  "name": "diy-home-improvement-theme",
+  "version": "1.0.0",
+  "description": "A modern WordPress theme for DIY and home improvement content, optimized for Smart Page Builder plugin and WP Engine hosting",
+  "main": "index.php",
+  "scripts": {
+    "build": "echo 'No build process required for this WordPress theme'",
+    "start": "echo 'This is a WordPress theme - install in wp-content/themes/'",
+    "dev": "echo 'For development, install in WordPress wp-content/themes/ directory'",
+    "install": "echo 'WordPress theme installed successfully'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhousvawls/testmcp.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "diy",
+    "home-improvement",
+    "smart-page-builder",
+    "wp-engine",
+    "tailwind-css",
+    "responsive",
+    "accessibility",
+    "seo"
+  ],
+  "author": "DIY Theme Developer",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jhousvawls/testmcp/issues"
+  },
+  "homepage": "https://github.com/jhousvawls/testmcp#readme",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "wordpress": {
+    "theme": true,
+    "version": "6.0",
+    "php": "8.0",
+    "textdomain": "diy-home-improvement"
+  }
+}
